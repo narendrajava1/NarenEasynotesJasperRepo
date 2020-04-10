@@ -1,0 +1,6 @@
+
+service:
+  error:
+    DEMO1: this is from DEMO1 %s    
+    getnote: "%s"
+    getallnotes: "%s"

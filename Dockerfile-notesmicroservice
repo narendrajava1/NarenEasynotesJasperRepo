@@ -1,0 +1,5 @@
+# Spring Boot App
+FROM java:8 AS easy-notes_app
+ADD /target/easy-notes-0.0.1-SNAPSHOT.jar   easy-notes-1.0.jar
+EXPOSE 9696
+ENTRYPOINT ["java","-jar","-Dspring.profiles.active=qa-sit","easy-notes-1.0.jar"]
